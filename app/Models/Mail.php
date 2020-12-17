@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Mail extends Model
+{
+    use \Sushi\Sushi;
+
+    protected $rows = [
+        ['email' => 'tiago.oliveira@upgrade.pt'],
+        ['email' => 'tiagofho@gmail.com']
+    ];
+}

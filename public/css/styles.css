@@ -1,0 +1,74 @@
+a {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+    height: 25px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+a:hover {
+    transform: scale(1.22);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    max-width: 600px;
+    flex-direction: column;
+}
+
+#sendButton {
+    margin:50px
+}
+
+a[href^="x-apple-data-detectors:"],
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+footer p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 23px;
+    word-spacing: 0px;
+    color: #1D88CA;
+
+}
+footer .logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .logos .icon {
+    padding: 20px 25px;
+    color: #1D88CA;
+    font-size: 24px;
+}
+
+/*EMAIL*/
+
+.image_container {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}

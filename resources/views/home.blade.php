@@ -13,7 +13,7 @@
                    <button type="submit" class="btn btn-primary mt-2">Enviar</button>
                </form>
            </div>
-        @if ($count)
+        @if ($count ?? '')
             <div class="alert alert-success mt-4">
                 <span>Foram enviados {{$count}} emails com sucesso!</span>
             </div>

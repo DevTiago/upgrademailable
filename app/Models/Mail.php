@@ -9,8 +9,5 @@ class Mail extends Model
 {
     use \Sushi\Sushi;
 
-    protected $rows = [
-        ['email' => 'tiago.oliveira@upgrade.pt'],
-        ['email' => 'tiagofho@gmail.com']
-    ];
+    protected $rows = [];
 }

@@ -15,4 +15,6 @@ use App\Http\Controllers\Controller;
 */
 
 Route::get('/', [Controller::class, 'index']);
-Route::get('/sendemail', [Controller::class, 'sendEmail'])->name('sendEmail');
+Route::post('/home', [Controller::class, 'login'])->name('login');
+
+Route::post('/sendemail', [Controller::class, 'sendEmail'])->name('sendEmail');

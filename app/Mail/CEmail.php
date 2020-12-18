@@ -28,8 +28,8 @@ class CEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('upgrade@upgrade.com')
+        return $this->from('info@upgrade.com', "Upgrade Agency")
             ->view('Email.mail')
-            ->subject('Feliz Natal!');
+            ->subject('🎄 Ho ho ho! Feliz Natal 🎄');
     }
 }

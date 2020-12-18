@@ -9,8 +9,5 @@ class Users extends Model
 {
     use \Sushi\Sushi;
 
-    protected $rows = [
-
-
-    ];
+    protected $rows = [];
 }

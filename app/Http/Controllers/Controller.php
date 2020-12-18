@@ -21,15 +21,6 @@ class Controller extends BaseController
     public function index() {
 
         return view('index');
-        /* $all = Mail::all()->toArray();
-
-                $emails = [];
-
-                foreach ($all as $key => $em) {
-                    $emails = Arr::prepend($emails, $em['email']);
-                }
-
-                return view('welcome', compact('emails'));*/
     }
 
     public function login(Request $request) {

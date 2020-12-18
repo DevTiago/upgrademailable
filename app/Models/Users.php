@@ -10,10 +10,7 @@ class Users extends Model
     use \Sushi\Sushi;
 
     protected $rows = [
-        [
-            'user' => 'Upgrade',
-            'password' => 'Upgrade#2020',
-        ],
+
 
     ];
 }

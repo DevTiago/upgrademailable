@@ -4,15 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Mails;
 use App\Models\Users;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use App\Models\Mail;
 use App\Mail\CEmail;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Redirect;
 
 
 class Controller extends BaseController
@@ -24,18 +18,18 @@ class Controller extends BaseController
     }
 
     public function login(Request $request) {
-            $users = Users::all();
+
 
             $username = $request->username;
             $password = $request->password;
 
-            foreach ($users as $user) {
-                if ($user->user === $username && $user->password === $password) {
+
+                if ($username === env('USERNAME') && $password === env('PASSWORD')) {
                    return view('home');
                 } else {
                   return redirect()->back()->with('msg', 'Utilizador inexistente!');
                 }
-            }
+
     }
 
     public static function sendEmail(Request $request)

@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Mails;
-use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use App\Mail\CEmail;
+use Illuminate\Support\Facades\Mail;
 
 
 class Controller extends BaseController
@@ -38,7 +38,7 @@ class Controller extends BaseController
        $count = 0;
 
         foreach ($emails as $email) {
-            \Mail::to(trim($email))->send(new CEmail());
+            Mail::to(trim($email))->send(new CEmail());
             $count += 1;
         }
 
